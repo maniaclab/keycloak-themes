@@ -1,0 +1,6 @@
+{
+    "themes": [{
+        "name" : "uctheme",
+        "types": [ "login" ]
+    }]
+}
