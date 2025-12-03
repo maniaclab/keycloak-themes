@@ -1,0 +1,23 @@
+/* Remove the default Keycloak logo in the master realm */
+div.kc-logo-text {
+    background-image: none;
+}
+
+/* Add your custom logo everywhere in the header wrapper */
+#kc-header-wrapper {
+    background-image: url(../img/Maniac_Logo_extended.png); /* adjust the filename */
+    background-position: left center; /* position the logo on the left */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 50px; /* Adjust padding to make space for the logo */
+    height: 50px; /* Adjust height as needed */
+}
+
+/* Adjust the realm name text to appear beside the logo */
+#kc-header-wrapper span {
+    /* Add styles to position the text beside the logo */
+    margin-left: 10px; /* Space between logo and text */
+    line-height: 50px; /* Align text vertically with the logo height */
+    /* Add font styles if needed */
+}
+
