@@ -5,13 +5,20 @@
 }
 
 div.kc-logo-text {
-    background-image: url(../img/Maniac_Logo_extended.png);
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    gap: 10px;              /* spacing between image and text */
+    justify-content: center;
     height: 63px;
     width: 300px;
     margin: 0 auto;
 }
 
+div.kc-logo-text img {
+    height: 100%;           /* keep same height as before */
+    width: auto;            /* preserve aspect ratio */
+}
+
 div.kc-logo-text span {
-    display: block;
+    display: inline-block;
 }
