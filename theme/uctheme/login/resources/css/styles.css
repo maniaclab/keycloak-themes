@@ -38,3 +38,7 @@ div.kc-logo-text span {
     display: inline-block;
 }
 
+body {
+    background-image: url('../img/ATLAS-Logo-Square-Blue-CMYK.png');
+    background-size: cover;
+}
