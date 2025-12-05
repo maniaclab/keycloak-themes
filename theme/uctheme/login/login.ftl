@@ -4,7 +4,6 @@
 
     <#-- HEADER ------------------------------------------------------------ -->
     <#if section == "header">
-        <link rel="stylesheet" type="text/css" href="${url.resourcesPath}/css/custom.css" />
         ${msg("loginAccountTitle")}
 
     <#-- FORM SECTION (HIDDEN) -------------------------------------------- -->
