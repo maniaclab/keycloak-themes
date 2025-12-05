@@ -10,7 +10,7 @@ div.kc-logo-text {
     justify-content: center;
     gap: 12px;
 
-    /* Remove any default Keycloak background image */
+    /* Remove Keycloak’s default background */
     background-image: none !important;
     background-repeat: unset;
     background-size: unset;
@@ -20,17 +20,18 @@ div.kc-logo-text {
     margin: 0 auto;
 }
 
-/* Add your logo image to the left of the text */
+/* Logo on the left as a pseudo-element */
 div.kc-logo-text::before {
     content: "";
     display: inline-block;
-    background-image: url("../img/Maniac_Logo_extended.png");
+
+    background-image: url("../img/maniaclogo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
     height: 63px;
-    width: 248px; /* Maintains correct 4:1 aspect ratio */
+    width: 47px;  /* scaled for 342×462 image */
 }
 
 div.kc-logo-text span {
