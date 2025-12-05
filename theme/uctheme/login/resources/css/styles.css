@@ -1,0 +1,17 @@
+.login-pf body {
+    background: #800000;
+    background-size: cover;
+    height: 100%;
+}
+
+div.kc-logo-text {
+    background-image: url(../img/Maniac_Logo_extended.png);
+    background-repeat: no-repeat;
+    height: 63px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.kc-logo-text span {
+    display: block;
+}
