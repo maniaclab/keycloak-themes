@@ -8,12 +8,19 @@ div.kc-logo-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;             /* spacing between image and text */
+    gap: 12px;
+
+    /* Remove any default Keycloak background image */
+    background-image: none !important;
+    background-repeat: unset;
+    background-size: unset;
+
     height: 63px;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
 }
 
+/* Add your logo image to the left of the text */
 div.kc-logo-text::before {
     content: "";
     display: inline-block;
@@ -21,8 +28,9 @@ div.kc-logo-text::before {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
-    width: 63px;           /* adjust if logo should be wider/narrower */
+
+    height: 63px;
+    width: 248px; /* Maintains correct 4:1 aspect ratio */
 }
 
 div.kc-logo-text span {
