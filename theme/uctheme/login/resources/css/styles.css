@@ -1,11 +1,26 @@
 .login-pf body {
-    background-color: #800000; /* only color */
     background-image: url('../img/ATLAS-Logo-Square-Blue-CMYK.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;   /* required for overlay */
 }
 
+.login-pf body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 0, 0, 0.6); /* maroon with 60% opacity */
+    z-index: 0;
+}
+
+.login-pf {
+    position: relative;
+    z-index: 1;
+}
 
 div.kc-logo-text {
     display: flex;
