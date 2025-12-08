@@ -22,6 +22,16 @@
     z-index: 1;
 }
 
+.card-pf {
+margin: 0 auto;
+box-shadow: var(--pf-global--BoxShadow--lg);
+padding: 0 20px;
+max-width: 500px;
+border-top: 4px solid;
+border-color: #B646AE;
+background-color: #fff;
+}
+
 div.kc-logo-text {
     display: flex;
     align-items: center;
