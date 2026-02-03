@@ -1,6 +1,10 @@
 {
     "themes": [{
-        "name" : "uctheme-irishep",
+        "name" : "uctheme-af",
         "types": [ "login" ]
-    }]
+    },
+    {"name" : "uctheme-irishep",
+        "types": [ "login" ]
+    }
+    ]
 }
