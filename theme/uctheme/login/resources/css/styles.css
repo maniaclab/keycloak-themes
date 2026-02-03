@@ -1,10 +1,3 @@
-.login-pf body {
-    background-image: url('../img/ATLAS-Logo-Square-Blue-CMYK.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;   /* required for overlay */
-}
 
 .login-pf body::before {
     content: "";
@@ -53,13 +46,15 @@ div.kc-logo-text::before {
     content: "";
     display: inline-block;
 
-    background-image: url("../img/maniaclogo.png");
+    background-image: url("../img/mainlogo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
+    /*height: 63px;
+    width: 232px;*/  /* scaled for 443x120 ucaf image */
     height: 63px;
-    width: 47px;  /* scaled for 342×462 image */
+    width: 117px;  /* scaled for 218×117 irishep image */
 }
 
 div.kc-logo-text span {
