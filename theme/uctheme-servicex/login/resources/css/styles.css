@@ -5,7 +5,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /*background-color: rgba(128, 0, 0, 0.3);  maroon with 60% opacity */
     z-index: 0;
 }
 
@@ -17,38 +16,20 @@
 .card-pf {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
-    padding: 20px 30px 40px 30px;  /* top, right, bottom, left */
+    padding: 30px;
     max-width: 700px;
     border-top: 4px solid;
     border-color: #800000;
     background-color: #fff;
-    
-    /* Cover the realm name at top */
-    margin-top: -100px;  /* Pull up to cover SERVICEY */
-    padding-top: 100px;  /* Then add padding inside to push content down */
+    margin-top: -100px;  /* Cover the realm name */
 }
-
 
 div.kc-logo-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    /* Remove Keycloak's default background */
-    background-image: none !important;
-    background-repeat: unset;
-    background-size: unset;
-
-    height: 63px;
-    width: 100%;
-    margin: 0 auto;
+    display: none !important;  /* Hide the default logo area completely */
 }
 
-
-
 div.kc-logo-text span {
-    display: inline-block;
+    display: none !important;
 }
 
 /* Bottom logos styling */
@@ -56,19 +37,19 @@ div.kc-logo-text span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;  /* Space between the three logos */
+    gap: 25px;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #ddd;  /* Optional separator line */
+    border-top: 1px solid #ddd;
 }
 
 .bottom-logos img {
-    max-height: 50px;  /* Adjust based on your logo sizes */
+    max-height: 50px;
     width: auto;
     object-fit: contain;
 }
 
-/* Optional: Make logos responsive on smaller screens */
+/* Make logos responsive on smaller screens */
 @media (max-width: 600px) {
     .bottom-logos {
         flex-wrap: wrap;
@@ -80,8 +61,11 @@ div.kc-logo-text span {
     }
 }
 
-/* Hide everything above the card */
-
-.login-pf-page > *:not(.card-pf) {
+/* Hide the realm name and default header */
+#kc-page-title,
+.login-pf-page-header,
+h1#kc-page-title,
+.kc-page-title,
+#kc-header-wrapper {
     display: none !important;
 }
