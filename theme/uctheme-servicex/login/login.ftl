@@ -2,7 +2,7 @@
 <@layout.registrationLayout displayMessage=false displayInfo=false; section>
     
     <#-- PAGE TITLE (browser tab) ----------------------------------------- -->
-    <#if section == "title">
+    <#if section = "title">
         <#if client.clientId?contains("servicex")>
             ServiceX Login
         <#elseif client.clientId?contains("servicey")>
@@ -12,32 +12,34 @@
         </#if>
     
     <#-- HEADER ------------------------------------------------------------ -->
-    <#elseif section == "header">
-        <#-- Dynamic header based on client ID -->
+    <#elseif section = "header">
         <#if client.clientId?contains("servicex")>
             ServiceX
         <#elseif client.clientId?contains("servicey")>
             ServiceY
         <#else>
-            ServiceX  <#-- Default fallback -->
+            ServiceX
         </#if>
+    
     <#-- FORM SECTION (HIDDEN) -------------------------------------------- -->
-    <#elseif section == "form">
+    <#elseif section = "form">
         <style>
             /* Hide the username/password form cleanly */
             #kc-form, #kc-registration-container {
                 display: none !important;
             }
         </style>
+    
     <#-- INFO SECTION (HIDDEN) --------------------------------------------- -->
-    <#elseif section == "info">
+    <#elseif section = "info">
         <style>
             #kc-info {
                 display: none !important;
             }
         </style>
+    
     <#-- SOCIAL PROVIDERS (IdPs) ------------------------------------------- -->
-    <#elseif section == "socialProviders">
+    <#elseif section = "socialProviders">
         <#if social.providers??>
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
                 <hr/>

@@ -24,9 +24,8 @@
     background-color: #fff;
     
     /* Make card bigger to cover the realm name */
-    margin-top: -80px;  /* Pull the card up to cover the text */
-    padding-top: 60px;  /* Add padding inside so content isn't cramped */
-    min-height: 600px;  /* Make it taller */
+    margin-top: -60px;  /* Pull up less aggressively */
+    padding-top: 80px;  /* More top padding for the header */
 }
 
 div.kc-logo-text {
