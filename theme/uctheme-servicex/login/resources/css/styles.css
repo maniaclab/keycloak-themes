@@ -1,0 +1,76 @@
+.login-pf body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(128, 0, 0, 0.3);  maroon with 60% opacity */
+    z-index: 0;
+}
+
+.login-pf {
+    position: relative;
+    z-index: 1;
+}
+
+.card-pf {
+    margin: 0 auto;
+    box-shadow: var(--pf-global--BoxShadow--lg);
+    padding: 0 20px;
+    max-width: 500px;
+    border-top: 4px solid;
+    border-color: #800000;
+    background-color: #fff;
+}
+
+div.kc-logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    /* Remove Keycloak's default background */
+    background-image: none !important;
+    background-repeat: unset;
+    background-size: unset;
+
+    height: 63px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+div.kc-logo-text span {
+    display: inline-block;
+}
+
+/* Bottom logos styling */
+.bottom-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;  /* Space between the three logos */
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;  /* Optional separator line */
+}
+
+.bottom-logos img {
+    max-height: 50px;  /* Adjust based on your logo sizes */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Optional: Make logos responsive on smaller screens */
+@media (max-width: 600px) {
+    .bottom-logos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .bottom-logos img {
+        max-height: 40px;
+    }
+}

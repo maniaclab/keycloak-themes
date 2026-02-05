@@ -5,6 +5,10 @@
     },
     {"name" : "uctheme-irishep",
         "types": [ "login" ]
+    },
+    {
+        "name" : "uctheme-servicex",
+        "types": [ "login" ]
     }
     ]
 }
