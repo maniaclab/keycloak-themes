@@ -17,18 +17,16 @@
 .card-pf {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
-    padding: 0 20px;
-    max-width: 700px;  /* Even wider */
+    padding: 40px 30px;  /* Balanced padding all around */
+    max-width: 700px;
     border-top: 4px solid;
     border-color: #800000;
     background-color: #fff;
     
-    /* Make card bigger to cover the realm name */
-    margin-top: -80px;  /* Pull up more to cover realm name */
-    padding-top: 120px;  /* Much more top padding for header */
-    padding-bottom: 50px;  /* More bottom padding */
-    min-height: 550px;  /* Ensure minimum height */
+    /* Cover the realm name at top */
+    margin-top: -80px;
 }
+
 
 div.kc-logo-text {
     display: flex;

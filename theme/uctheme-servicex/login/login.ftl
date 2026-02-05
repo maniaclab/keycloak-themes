@@ -18,6 +18,14 @@
             #kc-form, #kc-registration-container {
                 display: none !important;
             }
+            
+            /* Style the header to show properly */
+            #kc-header {
+                padding-top: 60px;
+                padding-bottom: 20px;
+                font-size: 2em;
+                font-weight: 300;
+            }
         </style>
         
         <script>
