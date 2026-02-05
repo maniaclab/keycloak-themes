@@ -1,18 +1,8 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=false displayInfo=false; section>
     
-    <#-- PAGE TITLE (browser tab) ----------------------------------------- -->
-    <#if section = "title">
-        <#if client.clientId?contains("servicex")>
-            ServiceX Login
-        <#elseif client.clientId?contains("servicey")>
-            ServiceY Login
-        <#else>
-            ServiceX Login
-        </#if>
-    
     <#-- HEADER ------------------------------------------------------------ -->
-    <#elseif section = "header">
+    <#if section == "header">
         <#if client.clientId?contains("servicex")>
             ServiceX
         <#elseif client.clientId?contains("servicey")>
@@ -22,16 +12,27 @@
         </#if>
     
     <#-- FORM SECTION (HIDDEN) -------------------------------------------- -->
-    <#elseif section = "form">
+    <#elseif section == "form">
         <style>
             /* Hide the username/password form cleanly */
             #kc-form, #kc-registration-container {
                 display: none !important;
             }
         </style>
+        
+        <script>
+            /* Change browser tab title based on client */
+            <#if client.clientId?contains("servicex")>
+                document.title = "ServiceX Login";
+            <#elseif client.clientId?contains("servicey")>
+                document.title = "ServiceY Login";
+            <#else>
+                document.title = "ServiceX Login";
+            </#if>
+        </script>
     
     <#-- INFO SECTION (HIDDEN) --------------------------------------------- -->
-    <#elseif section = "info">
+    <#elseif section == "info">
         <style>
             #kc-info {
                 display: none !important;
@@ -39,7 +40,7 @@
         </style>
     
     <#-- SOCIAL PROVIDERS (IdPs) ------------------------------------------- -->
-    <#elseif section = "socialProviders">
+    <#elseif section == "socialProviders">
         <#if social.providers??>
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
                 <hr/>
