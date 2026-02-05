@@ -18,15 +18,16 @@
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
     padding: 0 20px;
-    max-width: 600px;  /* Made wider */
+    max-width: 700px;  /* Even wider */
     border-top: 4px solid;
     border-color: #800000;
     background-color: #fff;
     
     /* Make card bigger to cover the realm name */
-    margin-top: -60px;
-    padding-top: 100px;  /* Increased padding for header */
-    padding-bottom: 40px;  /* Add bottom padding too */
+    margin-top: -80px;  /* Pull up more to cover realm name */
+    padding-top: 120px;  /* Much more top padding for header */
+    padding-bottom: 50px;  /* More bottom padding */
+    min-height: 550px;  /* Ensure minimum height */
 }
 
 div.kc-logo-text {
