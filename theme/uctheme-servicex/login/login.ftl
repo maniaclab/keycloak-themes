@@ -1,11 +1,22 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=false displayInfo=false; section>
+    
+    <#-- PAGE TITLE (browser tab) ----------------------------------------- -->
+    <#if section == "title">
+        <#if client.clientId?contains("servicex")>
+            ServiceX Login
+        <#elseif client.clientId?contains("servicey")>
+            ServiceY Login
+        <#else>
+            ServiceX Login
+        </#if>
+    
     <#-- HEADER ------------------------------------------------------------ -->
-    <#if section == "header">
+    <#elseif section == "header">
         <#-- Dynamic header based on client ID -->
-        <#if client.clientId == "servicex-client">
+        <#if client.clientId?contains("servicex")>
             ServiceX
-        <#elseif client.clientId == "servicey-client">
+        <#elseif client.clientId?contains("servicey")>
             ServiceY
         <#else>
             ServiceX  <#-- Default fallback -->
