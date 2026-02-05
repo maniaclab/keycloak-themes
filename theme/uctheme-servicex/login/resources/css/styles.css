@@ -74,3 +74,21 @@ div.kc-logo-text span {
         max-height: 40px;
     }
 }
+
+/* Hide the realm name at the top of the page */
+#kc-page-title {
+    display: none !important;
+}
+
+.login-pf-page-header {
+    display: none !important;
+}
+
+/* Additional selectors to hide realm name */
+h1#kc-page-title {
+    display: none !important;
+}
+
+.kc-page-title {
+    display: none !important;
+}
