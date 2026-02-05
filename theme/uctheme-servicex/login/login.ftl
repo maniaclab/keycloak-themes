@@ -3,9 +3,9 @@
     <#-- HEADER ------------------------------------------------------------ -->
     <#if section == "header">
         <#-- Dynamic header based on client ID -->
-        <#if client.clientId == "servicex">
+        <#if client.clientId == "servicex-client">
             ServiceX
-        <#elseif client.clientId == "servicey">
+        <#elseif client.clientId == "servicey-client">
             ServiceY
         <#else>
             ServiceX  <#-- Default fallback -->
