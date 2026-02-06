@@ -1,30 +1,15 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=false displayInfo=false; section>
     
-    <#-- HEADER ------------------------------------------------------------ -->
+    <#-- HEADER (leave empty) --------------------------------------------- -->
     <#if section == "header">
-        <#if client.clientId?contains("servicex")>
-            ServiceX
-        <#elseif client.clientId?contains("servicey")>
-            ServiceY
-        <#else>
-            ServiceX
-        </#if>
-    
+        
     <#-- FORM SECTION (HIDDEN) -------------------------------------------- -->
     <#elseif section == "form">
         <style>
             /* Hide the username/password form cleanly */
             #kc-form, #kc-registration-container {
                 display: none !important;
-            }
-            
-            /* Style the header to show properly */
-            #kc-header {
-                padding-top: 60px;
-                padding-bottom: 20px;
-                font-size: 2em;
-                font-weight: 300;
             }
         </style>
         
@@ -51,6 +36,18 @@
     <#elseif section == "socialProviders">
         <#if social.providers??>
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
+                
+                <!-- PUT THE HEADER HERE INSIDE THE CARD -->
+                <h1 style="text-align: center; font-size: 2.5em; font-weight: 300; margin: 20px 0 40px 0; color: #333;">
+                    <#if client.clientId?contains("servicex")>
+                        ServiceX
+                    <#elseif client.clientId?contains("servicey")>
+                        ServiceY
+                    <#else>
+                        ServiceX
+                    </#if>
+                </h1>
+                
                 <hr/>
                 <p style="text-align:center; font-size:1.1em; margin-bottom:1.2rem;">
                     <strong>Login</strong>
@@ -78,7 +75,8 @@
                         </li>
                     </#list>
                 </ul>
-                <#-- BOTTOM LOGOS ------------------------------------------ -->
+                
+                <!-- BOTTOM LOGOS -->
                 <div class="bottom-logos">
                     <img src="${url.resourcesPath}/img/ATLAS-logo.png" alt="ATLAS" />
                     <img src="${url.resourcesPath}/img/Iris-hep-4-no-long-name.png" alt="IRIS-HEP" />
