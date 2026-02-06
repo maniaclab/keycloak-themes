@@ -7,7 +7,6 @@
     bottom: 0;
     z-index: 0;
 }
-
 .login-pf {
     position: relative;
     z-index: 1;
@@ -15,37 +14,32 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;  /* Add padding so card doesn't touch edges */
+    padding: 20px;
 }
-
 .card-pf {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
-    padding: 60px 100px 60px 100px;  /* Even more horizontal padding */
-    max-width: 1400px;  /* Much wider */
-    width: 90%;  /* 90% of screen width */
-    min-height: 85vh;  /* Taller - covers more grey */
-    border-top: 4px solid;
-    border-color: #800000;
+    padding: 60px 100px 60px 100px;
+    max-width: 1400px;
+    width: 90%;
+    min-height: 90vh;              /* Taller card */
+    border: 4px solid #800000;     /* Maroon border on ALL sides */
     background-color: #fff;
     position: relative;
     z-index: 10;
     display: flex;
     flex-direction: column;
 }
-
 /* Make the social providers section grow to push logos to bottom */
 #kc-social-providers {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
-
 /* Make the content area grow */
 #kc-social-providers > ul {
-    flex-grow: 1;
+    flex-grow: 0;          /* Don't stretch the button list */
 }
-
 /* Hide ALL the default header stuff */
 #kc-header-wrapper,
 #kc-header,
@@ -53,25 +47,22 @@ div.kc-logo-text,
 div.kc-logo-text span {
     display: none !important;
 }
-
 /* Bottom logos styling - push to bottom */
 .bottom-logos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    margin-top: auto;  /* Push to bottom */
+    margin-top: auto;      /* Push to bottom of the card */
     padding-top: 50px;
     padding-bottom: 20px;
     border-top: 3px solid #ddd;
 }
-
 .bottom-logos img {
     max-height: 90px;
     width: auto;
     object-fit: contain;
 }
-
 @media (max-width: 600px) {
     .bottom-logos {
         flex-wrap: wrap;
@@ -82,7 +73,6 @@ div.kc-logo-text span {
         max-height: 60px;
     }
 }
-
 /* Hide realm name */
 #kc-page-title,
 .login-pf-page-header,

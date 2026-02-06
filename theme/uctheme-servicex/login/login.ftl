@@ -54,14 +54,15 @@
                     </#if>
                 </h1>
                 
-                <hr style="border: 0; height: 3px; background-color: #ddd; margin: 20px 0;"/>
-                <p style="text-align:center; font-size:1.5em; margin-bottom:2rem; font-weight: 500;">
+                <hr style="border: 0; height: 3px; background-color: #999; margin: 30px 0;"/>
+                <p style="text-align:center; font-size:1.5em; margin-bottom:2.5rem; font-weight: 500;">
                     Sign in with
                 </p>
                 <ul class="${properties.kcFormSocialAccountListClass!}
                            <#if social.providers?size gt 3>
                                ${properties.kcFormSocialAccountListGridClass!}
-                           </#if>">
+                           </#if>"
+                    style="margin-bottom: 1.5rem;">
                     <#list social.providers as p>
                         <li>
                             <a id="social-${p.alias}"
@@ -81,6 +82,7 @@
                         </li>
                     </#list>
                 </ul>
+                <hr style="border: 0; height: 3px; background-color: #999; margin: 30px 0 0 0;"/>
                 
                 <!-- BOTTOM LOGOS -->
                 <div class="bottom-logos">
