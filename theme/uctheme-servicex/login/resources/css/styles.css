@@ -20,9 +20,9 @@
 .card-pf {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
-    padding: 60px;
-    max-width: 1000px;
-    width: 75%;
+    padding: 60px 80px;  /* More horizontal padding */
+    max-width: 1200px;  /* Wider */
+    width: 85%;  /* Wider percentage */
     min-height: 70vh;
     border-top: 4px solid;
     border-color: #800000;
@@ -47,7 +47,7 @@ div.kc-logo-text span {
     gap: 50px;
     margin-top: 50px;
     padding-top: 40px;
-    border-top: 1px solid #ddd;
+    border-top: 3px solid #ddd;  /* Thicker border */
 }
 
 .bottom-logos img {

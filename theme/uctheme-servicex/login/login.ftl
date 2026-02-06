@@ -38,7 +38,7 @@
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
                 
                 <!-- PUT THE HEADER HERE INSIDE THE CARD -->
-                <h1 style="text-align: center; font-size: 2.5em; font-weight: 300; margin: 20px 0 40px 0; color: #333;">
+                <h1 style="text-align: center; font-size: 2.5em; font-weight: 600; margin: 20px 0 40px 0; color: #333;">
                     <#if client.clientId?contains("servicex")>
                         ServiceX
                     <#elseif client.clientId?contains("servicey")>
@@ -48,7 +48,7 @@
                     </#if>
                 </h1>
                 
-                <hr/>
+                <hr style="border: 0; height: 3px; background-color: #ddd; margin: 20px 0;"/>
                 <p style="text-align:center; font-size:1.1em; margin-bottom:1.2rem;">
                     <strong>Login</strong>
                 </p>
