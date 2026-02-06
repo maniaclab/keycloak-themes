@@ -85,7 +85,8 @@
                             </a>
                         </li>
                     </#list>
-                </ul>
+                                    </ul>
+                <hr style="border: none; height: 3px; background-color: #999; margin: 30px 0 0 0; box-shadow: none;"/>
                 
                 <!-- BOTTOM LOGOS -->
                 <div class="bottom-logos">

@@ -19,7 +19,7 @@
 .card-pf {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
-    padding: 70px 210px 70px 210px;
+    padding: 70px 210px 30px 210px;
     max-width: 1400px;
     width: 90%;
     min-height: 90vh;              /* Taller card */
