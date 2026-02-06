@@ -19,6 +19,7 @@
                 font-weight: 700 !important;
                 padding: 18px 24px !important;
                 color: rgb(57, 126, 190) !important;
+                border: 3px solid #000 !important;
             }
         </style>
         
