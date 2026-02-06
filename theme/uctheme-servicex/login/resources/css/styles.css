@@ -19,7 +19,7 @@
 .card-pf {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
-    padding: 60px 100px 60px 100px;
+    padding: 60px 140px 60px 140px;
     max-width: 1400px;
     width: 90%;
     min-height: 90vh;              /* Taller card */
@@ -54,7 +54,7 @@ div.kc-logo-text span {
     align-items: center;
     gap: 60px;
     margin-top: auto;      /* Push to bottom of the card */
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 20px;
     border-top: 3px solid #ddd;
 }

@@ -13,9 +13,12 @@
             }
             
             /* Make the login buttons bigger */
-            .kc-social-links a {
-                font-size: 1.3em !important;
-                padding: 15px 20px !important;
+            .kc-social-links a,
+            #kc-social-providers a {
+                font-size: 1.6em !important;
+                font-weight: 700 !important;
+                padding: 18px 24px !important;
+                color: rgb(57, 126, 190) !important;
             }
         </style>
         
@@ -82,7 +85,7 @@
                         </li>
                     </#list>
                 </ul>
-                <hr style="border: 0; height: 3px; background-color: #999; margin: 30px 0 0 0;"/>
+                <hr style="border: none; height: 3px; background-color: #999; margin: 30px 0 0 0; box-shadow: none;"/>
                 
                 <!-- BOTTOM LOGOS -->
                 <div class="bottom-logos">
