@@ -11,6 +11,12 @@
             #kc-form, #kc-registration-container {
                 display: none !important;
             }
+            
+            /* Make the login buttons bigger */
+            .kc-social-links a {
+                font-size: 1.3em !important;
+                padding: 15px 20px !important;
+            }
         </style>
         
         <script>
@@ -49,8 +55,8 @@
                 </h1>
                 
                 <hr style="border: 0; height: 3px; background-color: #ddd; margin: 20px 0;"/>
-                <p style="text-align:center; font-size:1.1em; margin-bottom:1.2rem;">
-                    <strong>Login</strong>
+                <p style="text-align:center; font-size:1.5em; margin-bottom:2rem; font-weight: 500;">
+                    Sign in with
                 </p>
                 <ul class="${properties.kcFormSocialAccountListClass!}
                            <#if social.providers?size gt 3>
