@@ -22,23 +22,11 @@
     padding: 70px 210px 30px 210px;
     max-width: 1400px;
     width: 90%;
-    min-height: 90vh;              /* Taller card */
-    border: 4px solid #800000;     /* Maroon border on ALL sides */
+    min-height: 90vh;
+    border: 4px solid #800000;
     background-color: #fff;
     position: relative;
     z-index: 10;
-    display: flex;
-    flex-direction: column;
-}
-/* Make the social providers section grow to push logos to bottom */
-#kc-social-providers {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-/* Make the content area grow */
-#kc-social-providers > ul {
-    flex-grow: 0;          /* Don't stretch the button list */
 }
 /* Hide ALL the default header stuff */
 #kc-header-wrapper,
@@ -47,16 +35,16 @@ div.kc-logo-text,
 div.kc-logo-text span {
     display: none !important;
 }
-/* Bottom logos styling - push to bottom */
+/* Bottom logos - absolutely positioned at bottom of card */
 .bottom-logos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: auto;      /* Push to bottom of the card */
-    padding-top: 0px;
-    padding-bottom: 20px;
-    border-top: none;
+    position: absolute;
+    bottom: 40px;
+    left: 210px;
+    right: 210px;
 }
 .bottom-logos img {
     max-height: 80px;
@@ -68,8 +56,9 @@ div.kc-logo-text span {
     .bottom-logos {
         flex-wrap: wrap;
         gap: 20px;
+        left: 20px;
+        right: 20px;
     }
-    
     .bottom-logos img {
         max-height: 60px;
     }
